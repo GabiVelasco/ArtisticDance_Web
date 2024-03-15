@@ -1,23 +1,41 @@
+/**
+ * Adds event listeners to execute certain actions when the DOM content is loaded.
+ */
 document.addEventListener('DOMContentLoaded', () => {
-
+    /**
+     * Selects all sections in the document and performs actions on each section.
+     */
     const sections = document.querySelectorAll('section');
 
     sections.forEach(section => {
+        // Selecting elements within each section
         const button = section.querySelector('button');
         const close = section.querySelector('.close');
+        const slides = section.querySelectorAll('.inner1, .inner2'); // Corrected selector for slides
 
+        /**
+         * Adds a click event listener to the button to trigger certain actions.
+         * - Locks the body scroll
+         * - Scrolls to the current section smoothly
+         * - Adds transition classes to the section
+         */
         button.addEventListener('click', () => {
             document.body.style.overflow = 'hidden';
             window.scrollTo({
                 top: section.offsetTop,
                 behavior: 'smooth',
-            })
+            });
             section.classList.add('transition', 'animate');
             setTimeout(() => {
                 section.classList.add('animate-completed');
-            }, 1000)
+            }, 1000);
         });
 
+        /**
+         * Adds a click event listener to the close button to trigger certain actions.
+         * - Unlocks the body scroll
+         * - Removes transition and animation classes from the section
+         */
         close.addEventListener('click', () => {
             document.body.style.overflow = 'auto';
             section.classList.remove('animate-completed');
@@ -27,17 +45,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // JavaScript for slide functionality
-        const slides = section.querySelectorAll('.slide');
         let currentSlideIndex = 0;
 
-        section.addEventListener('swipeleft', () => {
-            navigateSlide('next');
+        /**
+         * Adds swipeLeft event listener to navigate to the previous slide.
+         */
+        section.addEventListener('swipeLeft', () => { // Corrected swipe event name
+            navigateSlide('prev'); // Changed direction for swipeLeft
         });
 
-        section.addEventListener('swiperight', () => {
-            navigateSlide('prev');
+        /**
+         * Adds swipeRight event listener to navigate to the next slide.
+         */
+        section.addEventListener('swipeRight', () => { // Corrected swipe event name
+            navigateSlide('next'); // Changed direction for swipeRight
         });
 
+        /**
+         * Navigates to the next or previous slide based on the direction provided.
+         * @param {string} direction - Direction to navigate ('next' or 'prev').
+         */
         function navigateSlide(direction) {
             if (direction === 'next') {
                 currentSlideIndex = (currentSlideIndex + 1) % slides.length;
@@ -56,16 +83,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // JavaScript for swipe functionality between sections
-    const innerSections = document.querySelectorAll('.inner');
-    innerSections.forEach(section => {
+    sections.forEach(section => {
         let initialX = null;
         let initialY = null;
 
+        /**
+         * Adds touchstart event listener to detect the initial touch position.
+         */
         section.addEventListener('touchstart', e => {
             initialX = e.touches[0].clientX;
             initialY = e.touches[0].clientY;
         });
 
+        /**
+         * Adds touchmove event listener to detect the touch movement and navigate between sections.
+         */
         section.addEventListener('touchmove', e => {
             if (!initialX || !initialY) {
                 return;
@@ -90,10 +122,16 @@ document.addEventListener('DOMContentLoaded', () => {
             initialX = null;
             initialY = null;
         });
+
     });
 
+    /**
+     * Navigates to the next or previous section based on the direction provided.
+     * @param {HTMLElement} currentSection - Current section element.
+     * @param {string} direction - Direction to navigate ('next' or 'prev').
+     */
     function navigateSection(currentSection, direction) {
-        const sections = document.querySelectorAll('.inner');
+        const sections = document.querySelectorAll('section');
         const currentIndex = Array.from(sections).indexOf(currentSection);
 
         let nextIndex;
@@ -106,4 +144,5 @@ document.addEventListener('DOMContentLoaded', () => {
         sections[nextIndex].scrollIntoView({ behavior: 'smooth' });
     }
 
+    
 });
