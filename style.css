@@ -40,9 +40,16 @@ section {
     background-image: url(img/Dance-Projects-2.png);
 }
 
+/* Stil für zusätzliche Slide */
+.k .inner2 {
+    display: none; /* Zusätzliche Slide standardmäßig ausblenden */
+}
+
 .kl .mask {
     background-image: url(img/DanceClasses.png);
 }
+
+
 
 h2 {
     color: #fff;
@@ -93,6 +100,28 @@ button:hover {
     z-index: 2;
 }
 
+.inner1 {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.inner2 {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+
 .bg {
     width: 100%;
     height: 100%;
@@ -116,7 +145,7 @@ button:hover {
 }
 
 .kl .bg {
-    background-image: url(img/CG4A1313-fotor-20240313174444.png);
+    background-image: url(img/CG4A1312b-fotor-2024031323416.png);
     background-color:#060707;
 }
 
@@ -179,4 +208,29 @@ p {
 }
 
 
+/* slides */
 
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: red;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.arrow-left {
+    left: 10px;
+    z-index: 4;
+}
+
+.arrow-right {
+    right: 10px;
+    z-index: 4;
+}
+
+/* slides end */
