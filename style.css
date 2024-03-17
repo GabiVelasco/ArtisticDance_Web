@@ -233,18 +233,24 @@ p {
 
 .transition .bg {
     transition: background-position 1s ease;
+    
 }
 
 .animate .bg1 {
     background-position: left;
+  
+    
+    
 }
 
 .animate .bg {
     background-position: left;
+    
 }
 
 .animate .bg2 {
     background-position: left;
+ 
 }
 
 .transition .text {
