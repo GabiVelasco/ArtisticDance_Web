@@ -123,7 +123,7 @@ button:hover {
 
 
 .bg {
-    width: 100%;
+    width: 50%;
     height: 100%;
     top: 0;
     left: 0;
@@ -233,23 +233,35 @@ p {
 
 .transition .bg {
     transition: background-position 1s ease;
+    transition: width 1s ease;
+
     
 }
 
 .animate .bg1 {
-    background-position: left;
+    background-position: center;
+    width: 50%;
   
     
     
 }
 
 .animate .bg {
-    background-position: left;
+    background-position: center;
+    width: 50%;
     
 }
 
+.animate .k .bg {
+    background-image: url(img/IMG_8494.JPG);
+    background-color:#060707;
+    width: 50%;
+    height: 100%;
+}
+
 .animate .bg2 {
-    background-position: left;
+    background-position: center;
+    width: 50%;
  
 }
 
