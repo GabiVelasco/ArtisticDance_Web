@@ -1,8 +1,15 @@
 ## [Unreleased]
 
+- **Added:** Branch selector feature.
 - **Added:** User selector feature.
 - **Added:** Datepicker functionality.
 - **Added:** Commit History section.
+
+## [Mar 18, 2024]
+
+- **Adjusted:** Scroll text.
+- **Added:** New h4 title "Computer Science Expert".
+- **Updated:** Changelog.
 
 ## [Mar 17, 2024]
 
@@ -20,7 +27,13 @@
 - **Documented:** Added string documentation for each step in JavaScript.
 - **Updated:** Added a new photo for the dance classes section.
 
+## [Mar 15, 2024]
+
+- **Added:** Inner2 to CSS.
+- **Added:** Inner1 and buttons for previous and next navigation.
+- **Documented:** String documentation for each step in JavaScript.
+- **Added:** New photo for dance classes section.
+
 ## [Mar 13, 2024]
 
-- **Added:** Initial commit for the project.
-- **Started:** Created a new repository for the project.
+- **Started:** New repository.
