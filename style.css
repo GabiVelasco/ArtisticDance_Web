@@ -206,6 +206,10 @@ button:hover {
     align-items: center;
     background: #fff;
     overflow:scroll;
+    
+   
+    vertical-align: middle;
+  
 }
 
 .text .box {
@@ -214,6 +218,9 @@ button:hover {
     max-width: 1000px;
     z-index: 1;
     height:100%;
+    vertical-align: middle;
+    top:-25%;
+    transform: translateY(25%);
     
 
 }
@@ -278,6 +285,9 @@ p {
 
 .animate .text {
     left: 50%;
+    vertical-align: middle;
+    
+    
 }
 
 .animate-completed .mask {
