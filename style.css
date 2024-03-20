@@ -151,6 +151,18 @@ button:hover {
     background-size: 800px;
 }
 
+.bg4 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
 .l .bg {
     background-image: url(img/IMG_8450.JPG);
     background-color: #060707;
@@ -185,6 +197,14 @@ button:hover {
     width: 100%;
     height: 100%;
 }
+
+.k .bg4 {
+    background-image: url(img/901694_566386796726376_833546323_o_.jpg);
+    background-color:#060707;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 
@@ -277,8 +297,15 @@ p {
 .animate .bg3 {
     background-position: center;
     width: 50%;
- 
+    
 }
+
+.animate .bg4 {
+    background-position: center;
+    width: 50%;
+    
+}
+
 
 /* .animate .k .bg {
     background-image: url(img/IMG_8494.JPG);
