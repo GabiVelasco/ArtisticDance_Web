@@ -5,10 +5,20 @@
 - **Added:** Datepicker functionality.
 - **Added:** Commit History section.
 
+## [Mar 20, 2024]
+
+- **Added:** Background images for Slide bg4 "Solidao a flor da pele."
+- **Added:** Slide for project "Solitude on the Surface."
+- **Updated:** Numbertext.
+- **Adjusted:** Background 3, animation, .k, .bg commented out.
+- **Added:** New slide for project "ALMOST55."
+- **Added:** Zip folder with source code for organizational purposes.
+- **Removed:** Inner1 and Inner2 classes; now using mySlides class inside inner.
+  
 ## [Mar 18, 2024]
 
 - **Adjusted:** Scroll text.
-- **Added:** New h4 title "Computer Science Expert".
+- **Added:** New h4 title "Computer Science Expert."
 - **Updated:** Changelog.
 
 ## [Mar 17, 2024]
