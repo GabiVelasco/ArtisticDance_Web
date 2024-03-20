@@ -139,6 +139,18 @@ button:hover {
     background-size: 800px;
 }
 
+.bg3 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
 .l .bg {
     background-image: url(img/IMG_8450.JPG);
     background-color: #060707;
@@ -166,6 +178,14 @@ button:hover {
     width: 100%;
     height: 100%;
 }
+
+.k .bg3 {
+    background-image: url(img/IMG_8389.JPG);
+    background-color:#060707;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 .kl .bg {
@@ -223,18 +243,16 @@ p {
     opacity: 0;
 }
 
-.transition .bg {
+.transition .bg, .bg1, .bg2, .bg3 {
     transition: background-position 1s ease;
     transition: width 1s ease;
 
     
 }
 
-.animate .bg1 {
+.animate .bg, .bg1, .bg2, .bg3  {
     background-position: center;
     width: 50%;
-  
-    
     
 }
 
@@ -244,11 +262,10 @@ p {
     
 }
 
-.animate .k .bg {
-    background-image: url(img/IMG_8494.JPG);
-    background-color:#060707;
+.animate .bg1 {
+    background-position: center;
     width: 50%;
-    height: 100%;
+    
 }
 
 .animate .bg2 {
@@ -256,6 +273,19 @@ p {
     width: 50%;
  
 }
+
+.animate .bg3 {
+    background-position: center;
+    width: 50%;
+ 
+}
+
+/* .animate .k .bg {
+    background-image: url(img/IMG_8494.JPG);
+    background-color:#060707;
+    width: 50%;
+    height: 100%;
+} */
 
 .transition .text {
     transition: left 1s ease;
