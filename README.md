@@ -2,6 +2,8 @@
 
 This project showcases the artistic journey and contributions of Gabriela Velasco in the realm of dance. It includes sections detailing her biography, dance projects, classes she offers, and technical aspects of the project implementation. The project primarily consists of an HTML document complemented by CSS styling and JavaScript functionality.
 
+https://gabivelasco.github.io/ArtisticDance_Web/
+
 ## Sections
 
 1. **Gabriela Velasco Biography**
