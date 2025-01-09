@@ -555,3 +555,26 @@ p {
     }
     
 }
+
+@media screen and (max-width:500px) {
+    h3 {
+        font-size: 1.5rem;
+    margin-bottom: 1rem; 
+    }
+
+    .text .box, .text-about-me .box, .text-dance-classes .box {
+        padding: 2rem;
+        margin: 0 auto;
+        max-width: 500px;
+        z-index: 1;
+        height:100%;
+        vertical-align: middle;
+        top:-25%;
+        transform: translateY(7%);
+        -webkit-transform: translateY(7%);
+        -moz-transform: translateY(7%);
+        -ms-transform: translateY(7%);
+        -o-transform: translateY(7%);
+        width: 90%;
+}
+}
