@@ -610,7 +610,7 @@ p {
         display: block; /* Show only on small screens */
         width: 100%;
         max-width: 1000px;
-        min-width: 350px;
+        min-width: 300px;
         margin:0 auto;
         
         
@@ -624,7 +624,7 @@ p {
       .image-classes img {
         width: 100%;
         max-width: 500px;
-        min-width: 300px;
+        min-width: 250px;
         display: block;
         margin: 0 auto;
       }
@@ -638,7 +638,7 @@ p {
   .image-classes img {
     width: 100%;
     max-width: 500px;
-    min-width: 300px;
+    min-width: 250px;
     display: block;
     margin: 0 auto;
   }
