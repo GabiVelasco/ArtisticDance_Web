@@ -225,8 +225,6 @@ button:hover {
     align-items: center;
     background: #fff;
     overflow:scroll;
-    
-   
     vertical-align: middle;
   
 }
@@ -240,9 +238,94 @@ button:hover {
     vertical-align: middle;
     top:-25%;
     transform: translateY(25%);
-    
 
 }
+
+.text-about-me {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    overflow:scroll;
+    vertical-align: middle;
+  
+}
+
+.text-about-me .box {
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    z-index: 1;
+    height:100%;
+    vertical-align: middle;
+    top:-25%;
+    transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -o-transform: translateY(10%);
+}
+
+.transition .text-about-me {
+    transition: left 1s ease;
+}
+
+.animate .text-about-me {
+    left: 50%;
+    vertical-align: middle;
+    
+    
+}
+
+
+.text-dance-classes .box {
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    z-index: 1;
+    height:100%;
+    vertical-align: middle;
+    top:-25%;
+    transform: translateY(15%);
+    -webkit-transform: translateY(15%);
+    -moz-transform: translateY(15%);
+    -ms-transform: translateY(15%);
+    -o-transform: translateY(15%);
+}
+
+
+.text-dance-classes {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    overflow:scroll;
+    vertical-align: middle;
+  
+}
+
+.transition .text-dance-classes {
+    transition: left 1s ease;
+}
+
+.animate .text-dance-classes {
+    left: 50%;
+    vertical-align: middle;
+    
+    
+}
+
+
 
 h3 {
     font-size: 4rem;
