@@ -553,6 +553,22 @@ p {
         width: 0%;
         
     }
+
+    .text .box, .text-about-me .box, .text-dance-classes .box {
+        padding: 2rem;
+        margin: 0 auto;
+        max-width: 500px;
+        z-index: 1;
+        height:100%;
+        vertical-align: middle;
+        top:-25%;
+        transform: translateY(10%);
+        -webkit-transform: translateY(10%);
+        -moz-transform: translateY(10%);
+        -ms-transform: translateY(10%);
+        -o-transform: translateY(10%);
+        width: 90%;
+}
     
 }
 
@@ -578,3 +594,25 @@ p {
         width: 90%;
 }
 }
+
+.responsive-image {
+    display: none; /* Hide by default */
+  }
+  
+  @media (max-width: 1050px) {
+    .responsive-image {
+      display: block; /* Show only on small screens */
+    
+      
+    }
+
+    .responsive-image img{
+        display: block; /* Show only on small screens */
+        width: 100%;
+        max-width: 1000px;
+        min-width: 350px;
+        margin:0 auto;
+        
+        
+      }
+  }
