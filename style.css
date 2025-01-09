@@ -556,7 +556,7 @@ p {
     
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:640px) {
     h3 {
         font-size: 1.5rem;
     margin-bottom: 1rem; 
