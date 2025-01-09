@@ -538,3 +538,20 @@ p {
 
 
 /* slides w3schools ende*/
+
+@media screen and (max-width:1050px) {
+    .animate .text, .animate .text-about-me, .animate .text-dance-classes{
+        left: 0%;
+        vertical-align: middle;
+        width: 100%;
+        
+        
+    }
+
+    .animate .bg, .bg1, .bg2, .bg3  {
+        background-position: center;
+        width: 0%;
+        
+    }
+    
+}
